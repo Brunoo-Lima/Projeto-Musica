@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Witcher';
+    src: url('fontes/Thewitcher-jnOj.ttf') format('Truetype');
+}
+
+@font-face {
+    font-family: 'Corpo';
+    src: url('fontes/Sriracha-Regular.ttf') format('Truetype');
+}
+
+:root {
+    --fonte01: 'Witcher', cursive;
+    --fonte02: 'Corpo', cursive;
+    --fonte03: Arial,Verdana, Helvetica,sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: white;
+    font-family: var(--fonte02);
+}
+
+header {
+    background-color: #AC831F;
+    padding-bottom: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 6px #AC831F;
+}
+
+header h1 {
+    font-family: var(--fonte01);
+    font-size: 8vw;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+header span {
+    font-family: var(--fonte01);
+    font-style: italic;
+    padding: 5px;
+    font-size: 10pt;
+    background-color: black;
+    color: white;
+}
+
+
+div#ytb{
+    font-family: var(--fonte01);
+    font-size: 2vw;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+div > a {
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: black;
+    padding: 10px;
+    background-color: #AC831F;
+}
+
+div a:hover {
+    color: #AC831F;
+    background-color: black;
+    padding: 10px;
+}
+
+section {
+    display: block;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-family: var(--fonte02);
+    font-size: 3.5vw;
+    line-height: 2em;
+}
+
+section.normal p {
+    padding: 20px;
+    display: block;
+}
+
+section.imagem {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem p {
+    background-color: rgba(15, 15, 15, 0.308);
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 15px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+section#yen {
+    background-image: url(imagens/yen2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    
+}
+
+section#yen_gerald {
+    background-image:url(imagens/gerald-yen2.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+
+}
+
+article div#sinopse {
+    max-width: 900px;
+    min-width: 320px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 25px;
+    
+}
+article div#sinopse h1{
+    text-align: center;
+    font-size: 3vw;
+    padding: 5px;
+    font-family: var(--fonte01);
+    box-shadow: inset 1px 1px 5px #555554;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+article div#sinopse > p {
+    font-family: var(--fonte03);
+    font-size: 2.5vw;
+    text-align: justify;
+    padding: 15px;
+    background-image: linear-gradient(to top, #555554, rgb(255, 255, 255));
+}
+
+section#sites_theWitcher p#site {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: var(--fonte01);
+    font-size: 2.5vw;
+    background-image: linear-gradient(to right, #AC831F, #ffffff);
+}
+
+ul#site {
+    text-align: center;
+}
+
+section#sites_theWitcher li {
+    display: inline;
+    text-align: center;
+}
+
+section#sites_theWitcher li a {
+    text-decoration: none;
+    color:black;
+    background-color:#AC831F;
+    border: 2px solid black;
+    padding: 10px;
+    font-family: var(--fonte01);
+    font-size: 2vw;
+}
+section#sites_theWitcher a:hover {
+    background-color: black;
+    color:#AC831F;
+}
+
+footer {
+    font-family: var(--fonte03);
+    background-color: #555554;
+    padding: 15px;
+    text-align: center;
+}
+
+footer p {
+    padding: 5px;
+    color: white;
+}
+
+footer a {
+    padding:  0 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
